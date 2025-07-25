@@ -1,0 +1,31 @@
+<%- layout('/layout/boilerplate.ejs') %>
+
+<body>
+  <div class="container d-flex justify-content-center align-items-center signup-cont">
+    <div class="card shadow-lg p-4 rounded-4 signup-card w-100" style="max-width: 450px;">
+      <h2 class="text-center mb-4 text-deep-teal">Sign-Up</h2>
+
+      <form action="/signup" method="POST" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input name="username" type="text" class="form-control" id="username" placeholder="Enter Username" required>
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Enter Email" required>
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="form-label">Password</label>
+          <input name="password" type="password" class="form-control" id="password" placeholder="Enter Password" required>
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100 btn-teal">Sign-Up</button>
+      </form>
+    </div>
+  </div>
+</body>

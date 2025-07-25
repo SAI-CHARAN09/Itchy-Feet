@@ -1,0 +1,357 @@
+:root {
+    --base-teal: #A6D6D6;
+    --deep-teal: #6BB3B3;
+    --light-bg: #F5F7FA;
+    --accent: #FE424D;
+    --accent-dark: #C7323A;
+    --text-dark: #2E2E2E;
+    --card-bg: #EAF6F6;
+    --hover-teal: #87C9C9;
+    --highlight: #FEEBCB;
+}
+
+/* Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 75%; /* Mimics Ctrl + '-' zoom */
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #3aadad !important;
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.navbar1 {
+    background: linear-gradient(to right, var(--deep-teal), #7dc9c9);
+    width: 100%;
+    box-shadow: 0 0.14rem 0.57rem rgba(0, 0, 0, 0.1);
+    /* height: 5.5rem; */
+    padding: 1.5rem 0 1.5rem 0 !important;
+}
+
+
+.fa-compass {
+    color: var(--accent);
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+.nav-link {
+    color: black !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Footer */
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--deep-teal);
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.f-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1.7rem 0;
+    background-color: var(--deep-teal);
+    border: 0.5px solid black !important;
+
+}
+
+.f-socialmedia i {
+    margin-left: 0.88rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.f-socialmedia i:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    color: var(--accent);
+}
+
+.f-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.f-links a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+.f-brand {
+    margin: 0.4rem 0;
+    font-weight: bold;
+}
+
+/* Cards in Home */
+.card-img-top {
+    width: 100%;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.listing-card {
+    border: none;
+    border-radius: 1.5rem !important;
+    box-shadow: 0.71rem 0.85rem 0.71rem rgba(0, 0, 0, 0.15);
+    background-color: var(--hover-teal) !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border 0.35s ease;
+    will-change: transform, box-shadow;
+    margin: 0 0.5rem 2rem 0.5rem;
+}
+
+.listing-card:hover {
+    transform: translateY(-0.57rem) scale(1.02);
+    box-shadow: 0.71rem 0.85rem 2.14rem rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--hover-teal);
+}
+
+.card-body {
+    padding: 0.75rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text p {
+    font-weight: 400;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* border-radius: 1.6rem !important; */
+}
+.listing-card img{
+    border-radius: 1.6rem !important;
+}
+.card-img-overlay:hover {
+    opacity: 1;
+    background-color: rgba(161, 161, 161, 0.3);
+}
+.btn-teal {
+  background-color: var(--base-teal);
+  color: white;
+  transition: 0.3s ease;
+}
+.btn-teal:hover {
+  background-color: var(--deep-teal);
+}
+
+.text-deep-teal {
+  color: var(--deep-teal);
+}
+
+.starability-slot label {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  border: 2px solid var(--light-teal);
+  border-radius: 10px;
+}
+
+/* Button */
+.add-new-btn {
+    margin-left: 38%;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-new-btn:hover {
+    background-color: var(--accent-dark);
+}
+
+/* Show Image */
+.show-img {
+    height: 46vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Show Buttons */
+.show-btns {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Map */
+#map {
+    height: 20rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0 0.14rem 0.71rem rgba(0, 0, 0, 0.1);
+}
+.signup-card {
+  background-color: #fff;
+  border: 1px solid #e6f4f1;
+}
+
+.text-deep-teal {
+  color: #147d73;
+}
+
+.btn-teal {
+  background-color:  #20c997;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-teal:hover {
+  background-color: var(--deep-teal);
+}
+
+input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}
+.signup-cont{
+    min-height: 75vh;
+}
+.login-cont{
+    min-height: 75vh;
+}
+.login-card {
+  background-color: #fff;
+  border: 1px solid #e6f4f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(32, 201, 151, 0.2);
+}
+
+.text-deep-teal {
+  color:  #147d73;
+}
+
+.btn-teal {
+  background-color:#20c997;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-teal:hover {
+  background-color:  #147d73;
+}
+
+input:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}
+/* Scoped for listing pages */
+.listing-theme {
+  --teal-bg: #e6f4f1;
+  --teal-border: #c1e9e1;
+  --teal-text: #147d73;
+  --teal-main: #20c997;
+  --teal-hover: #138f80;
+}
+
+.listing-card {
+  border: 1px solid var(--teal-border);
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.listing-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(32, 201, 151, 0.1);
+}
+
+.text-deep-teal {
+  color: var(--teal-text);
+}
+
+.btn-teal {
+  background-color: var(--teal-main);
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-teal:hover {
+  background-color: var(--teal-hover);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--teal-main);
+  box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .add-new-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-img-top {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    .listing-card {
+        border-radius: 1.5rem;
+    }
+
+    .scaled-wrapper {
+        transform: scale(1);
+        width: 100%;
+    }
+}

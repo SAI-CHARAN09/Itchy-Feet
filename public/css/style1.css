@@ -1,0 +1,177 @@
+/* Font family and base */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    min-height: 100vh;
+    background-color: #f5f7fb; /* soft light blue-gray bg */
+}
+
+/* Icon - poo example */
+.fa-poo {
+    color: #7b61ff; /* vibrant purple */
+    font-size: 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #dbe4ff; /* light periwinkle */
+    height: 4rem;
+    background: linear-gradient(rgba(219, 228, 255, 0.95), rgba(245, 247, 255, 1));
+    box-shadow: 0 2px 8px rgba(123, 97, 255, 0.2);
+}
+
+.nav-link {
+    color: #3a3a8c !important; /* deep blue */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #7b61ff !important; /* purple accent on hover */
+}
+
+/* Footer */
+.f-info {
+    background-color: #e2e6ff; /* light lavender */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbe4ff;
+}
+
+.f-socialmedia i {
+    margin-left: 0.88rem;
+    font-size: 1.2rem;
+    color: #6f57ff; /* purple */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.f-socialmedia i:hover {
+    transform: scale(1.1);
+    color: #3a3a8c; /* darker blue */
+}
+
+.f-links a {
+    text-decoration: none;
+    color: #3a3a8c;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+.f-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    border: none !important;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 15px rgba(123, 97, 255, 0.15);
+    border-radius: 1rem;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem 1.5rem !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+    color: #444;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+    background-color: rgba(123, 97, 255, 0.1);
+}
+
+/* Buttons */
+.add-btn,
+.edt-btn {
+    background-color: #7b61ff !important; /* purple */
+    border: none !important;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover,
+.edt-btn:hover {
+    background-color: #5a43cc !important;
+}
+
+/* Container */
+.container {
+    flex: 1;
+    min-height: 80dvh;
+}
+
+/* Textarea scrollbar */
+textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #7b61ff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #5a43cc;
+}
+
+/* Show Image */
+.show-img {
+    height: 36vh;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Buttons */
+.show-btn {
+    border: none !important;
+    background-color: #7b61ff !important;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.show-btn:hover {
+    background-color: #5a43cc !important;
+}
