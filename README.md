@@ -10,21 +10,6 @@
 
 ---
 
-## 📷 UI Preview
-
-### 🏠 Homepage
-![Homepage](https://via.placeholder.com/900x500.png?text=Homepage+Preview)
-
-### 📄 Listing Page
-![Listing Page](https://via.placeholder.com/900x500.png?text=Listing+Page+Preview)
-
----
-
-## 🚀 Live Demo
-
-🔗 [https://itchy-feet.onrender.com](https://itchy-feet.onrender.com) *(replace with your actual Render URL after deployment)*
-
----
 
 ## 🔧 Features
 
@@ -116,7 +101,7 @@ Itchy-Feet उपयोगकर्ताओं को यात्रा स्
 👤 Author
 Vennu Sai Charan
 📧 vennusaicharan09@gmail.com
-🔗 GitHub Profile
+🔗 SAI-CHARAN09
 
 🤝 Contributing
 We welcome your contributions!
